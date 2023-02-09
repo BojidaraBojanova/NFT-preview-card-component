@@ -1,0 +1,240 @@
+/*color: 41 236 238 -blue
+        148 181 224
+    */
+body
+{
+    background-color:rgb(13, 26, 45) ;
+    margin: 0;
+    padding: 0;
+}
+.card-centered
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    height: 100vh;
+}
+.card
+{
+    background-color:rgb(21, 39, 63) ;
+    width: 18vw;
+    height: 70vh;
+    border-radius: 2%;
+}
+
+.picture
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(41, 236, 238);
+    width: 16vw;
+    height: 29vh;
+    border-radius: 2%;
+    margin-top: 2vh;
+    margin-left: 1vw;
+   
+}
+picture
+{
+    width: 16vw;
+    height: 30vh;
+    
+}
+
+.picture img
+{
+    display: flex;
+    justify-content: center;
+    border-radius: 2%;
+    width: 100%;
+    height: 100%;
+}
+.picture:hover .icon-view
+{
+    visibility: visible;
+    filter: contrast(150%);
+    
+}
+.picture img:hover 
+{
+    background-size: cover;
+    background-blend-mode: multiply;
+    opacity: 0.4;
+
+} 
+.icon-view
+{
+    display: flex;
+    width: 5vw;
+    margin-top: -20vh;
+    margin-bottom: 10vh;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+}
+
+.title a
+{
+    color: white;
+    margin-left: 1vw;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+.title a:hover
+{
+    color: rgb(41, 236, 238);
+}
+.card-description
+{
+    margin-left: 1vw;
+    color: rgb(125, 147, 173);
+}
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.eth
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1vw;
+    color: rgb(41, 236, 238);
+}
+.eth-icon
+{
+    margin-top:2vh;
+    margin-right: 0.5vw;
+}
+
+.time
+{
+    display: flex;
+    flex-direction: row;
+    color: rgb(125, 147, 173);
+    margin-right: 1vw;
+}
+.time-icon
+{
+    margin-top:2.2vh;
+    margin-right: 0.5vw;
+}
+hr.line
+{
+    height: 1px;
+    background-color:rgb(125, 147, 173);
+    margin: 1vw;
+    border: none;
+}
+.author
+{
+    display: flex;
+    align-items:flex-end;
+}
+.author-icon
+{
+    width: 3vw;
+    margin-left: 1vw;
+    
+}
+.author-icon img
+{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+.author-description
+{
+    margin-left: 1vw;
+    color:rgb(125, 147, 173); ;
+}
+.author-description a
+{
+    color: white;
+    text-decoration: none;
+}
+.author-description a:hover
+{
+    color:rgb(41, 236, 238) ;
+}
+@media only screen and (max-width: 600px)
+{
+    .card-centered
+    {
+        width: 100vw;
+        height: 100vh;
+    }
+    .card
+    {
+        width: 90vw;
+        height: 90vh;
+        border-radius: 2%;
+    }
+    .picture
+    {
+        margin-left: 37vw;
+        margin-top: 7vh;
+    }
+    picture
+    {
+        width: 80vw;
+        height: 60vh;
+
+    }
+    .picture img
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .title
+    {
+        margin-top: 15vh;
+        margin-left: 4vw;
+        font-size: 5vw;
+    }
+    .card-description
+    {
+        margin-left: 4vw;
+        font-size: 5vw;
+    }
+    .row
+    {
+        font-size: 5vw;
+        margin-left: 4vw;
+    }
+    .eth-icon
+    {
+        margin-top: 3vh;
+        margin-right: 2vw;
+    }
+    .time-icon
+    {
+        margin-top: 3vh;
+    }
+    .time-text
+    {
+        margin-right: 4vw;
+    }
+    hr.line
+    {
+      margin: 5vw;
+      margin-top: 0;  
+    }
+    .author-icon
+    {
+        width: 15vw;
+        margin-left: 4vw;
+        margin-right: 2vw;
+    }
+    .author-description
+    {
+        margin-bottom: 1vh;
+        font-size: 5vw;
+    }
+   
+}
